@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>配置 | Leopold-Sze</title>
+    <meta name="description" content="A Blog Powered By VitePress">
+    <link rel="stylesheet" href="/assets/style.c3210e46.css">
+    <link rel="modulepreload" href="/assets/app.84e14dc4.js">
+    <link rel="modulepreload" href="/assets/2_Engineering_vitepress.md.0f534d2d.lean.js">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="keywords" content="Leopold-Sze VitePress">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="twitter:title" content="配置 | Leopold-Sze">
+  <meta property="og:title" content="配置 | Leopold-Sze">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="Leopold-Sze, back to home" data-v-675d8756 data-v-cc01ef16><!----> Leopold-Sze</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><nav class="nav-links" data-v-675d8756 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/home" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/docs" data-v-b8818f8c>归档 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/tags" data-v-b8818f8c>分类 <!----></a></div></div><!--]--><!----><!----></nav></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><nav class="nav-links nav" data-v-83e92a68 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/home" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/docs" data-v-b8818f8c>归档 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/tags" data-v-b8818f8c>分类 <!----></a></div></div><!--]--><!----><!----></nav><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><p class="sidebar-link-item">前端</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/1_FrontEnd/pinia">Pinia</a><!----></li></ul></li><li class="sidebar-link"><p class="sidebar-link-item">工具</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item active" href="/2_Engineering/vitepress">vitepress</a><!----></li></ul></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h4 id="配置" tabindex="-1">配置 <a class="header-anchor" href="#配置" aria-hidden="true">#</a></h4><div class="language-"><pre><code>// 基础目录结构
+.
+├─ docs
+│  ├─ .vitepress
+│  │  └─ config.js
+│  └─ index.md
+└─ package.json
+</code></pre></div><div class="language-js"><pre><code><span class="token comment">// .vitepress/config.js</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">&#39;VitePress&#39;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">description</span><span class="token operator">:</span> <span class="token string">&#39;Just playing around.&#39;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><br><h4 id="部署" tabindex="-1">部署 <a class="header-anchor" href="#部署" aria-hidden="true">#</a></h4><p><strong>默认打包位置：</strong><code>docs/.vitepress/dist</code></p><div class="language-js"><pre><code><span class="token comment">// 脚本命令，支持 --port --openx</span>
+<span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vitepress dev docs --port 9000 --open&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vitepress build docs&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;servce&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vitepress serve docs&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><div class="language-shell"><pre><code><span class="token comment"># 打包</span>
+<span class="token function">yarn</span> build
+
+<span class="token comment"># 本地预览</span>
+<span class="token function">yarn</span> serve
+</code></pre></div><div class="warning custom-block"><p class="custom-block-title">WARNING</p><p>💁‍♂️如果网站被部署在子目录，如 (<code>https://example.com/subdir/</code>), 那必须设置子目录 <code>&#39;/subdir/&#39;</code> 作为 <code>docs/.vitepress/config.js</code> 中的 <code>base</code> 配置.</p></div></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc><div class="edit" data-v-07c132fc><div class="edit-link" data-v-07c132fc data-v-1ed99556><!----></div></div><div class="updated" data-v-07c132fc><!----></div></footer><div class="next-and-prev-link" data-v-7eddb2c4 data-v-38ede35f><div class="container" data-v-38ede35f><div class="prev" data-v-38ede35f><a class="link" href="/1_FrontEnd/pinia" data-v-38ede35f><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="icon icon-prev" data-v-38ede35f><path d="M19,11H7.4l5.3-5.3c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0l-7,7c-0.1,0.1-0.2,0.2-0.2,0.3c-0.1,0.2-0.1,0.5,0,0.8c0.1,0.1,0.1,0.2,0.2,0.3l7,7c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L7.4,13H19c0.6,0,1-0.4,1-1S19.6,11,19,11z"></path></svg><span class="text" data-v-38ede35f>Pinia</span></a></div><div class="next" data-v-38ede35f><!----></div></div></div><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"1_frontend_pinia.md\":\"6d44ced1\",\"2_engineering_vitepress.md\":\"0f534d2d\",\"home.md\":\"040e5cad\",\"index.md\":\"71f8ab0f\"}")</script>
+    <script type="module" async src="/assets/app.84e14dc4.js"></script>
+    
+  </body>
+</html>

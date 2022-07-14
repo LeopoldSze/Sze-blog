@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as e}from"./app.fbb580f6.js";const _='{"title":"\u914D\u7F6E","description":"","frontmatter":{},"headers":[],"relativePath":"2_Engineering/vitepress.md"}',t={},o=e("",9),p=[o];function r(c,i,d,l,u,k){return a(),n("div",null,p)}var v=s(t,[["render",r]]);export{_ as __pageData,v as default};

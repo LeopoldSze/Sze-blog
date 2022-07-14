@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as a,a as t}from"./app.fbb580f6.js";const f='{"title":"\u7279\u6027","description":"","frontmatter":{},"headers":[],"relativePath":"1_FrontEnd/pinia.md"}',p={},o=t("",25),e=[o];function c(l,u,i,r,k,d){return a(),s("div",null,e)}var m=n(p,[["render",c]]);export{f as __pageData,m as default};

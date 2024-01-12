@@ -2,4 +2,8 @@ node_modules/
 .idea
 
 # log
-yarn-error.log
+*-error.log
+
+# cache & dist
+docs/.vitepress/cache
+docs/.vitepress/dist

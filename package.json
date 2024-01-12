@@ -1,25 +1,33 @@
 {
   "name": "leopold-sze-md",
   "version": "1.0.0",
-  "main": "docs/index.md",
+  "main": "docs/src/index.md",
+  "type": "module",
   "repository": "git@gitee.com:leopoldsze/record_files.git",
   "author": "Leopold-Sze <leopoldsze@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev docs --port 9001 --open",
+    "dev": "vitepress dev docs --port 9000",
     "build": "vitepress build docs",
     "servce": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^0.22.4",
-    "vue": "^3.2.37"
+    "@types/node": "^20.11.0",
+    "globby": "^14.0.0",
+    "gray-matter": "^4.0.3",
+    "mz": "^2.7.0",
+    "prettier": "^3.1.1",
+    "vitepress": "1.0.0-rc.36",
+    "vue": "^3.4.10"
   },
   "pnpm": {
     "peerDependencyRules": {
+      "vue": "^3.0.0",
       "ignoreMissing": [
         "@types/react",
         "react",
-        "react-dom"
+        "react-dom",
+        "@algolia/client-search"
       ]
     }
   }

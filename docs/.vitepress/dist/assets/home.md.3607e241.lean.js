@@ -1,1 +1,0 @@
-import{_ as e,c as t,o,a as r}from"./app.fbb580f6.js";const u='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"home.md"}',a={},d=r("",9),p=[d];function c(s,_,n,g,i,f){return o(),t("div",null,p)}var m=e(a,[["render",c]]);export{u as __pageData,m as default};

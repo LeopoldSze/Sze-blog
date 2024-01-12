@@ -1,0 +1,31 @@
+{
+  "exclude": [
+    "node_modules",
+    "docs/src/assets",
+    "docs/public",
+    "docs/dist"
+  ],
+  "include": [
+    "docs/**/*.ts",
+    "docs/**/*.tsx",
+    "docs/**/*.vue",
+    "index.d.ts"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["docs/src/*"]
+    },
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "noEmit": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node"
+  }
+}
